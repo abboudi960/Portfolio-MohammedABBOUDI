@@ -1,23 +1,26 @@
 body {
     margin: 0px;
    padding: 0px;
+   width: auto;
+   height: auto;
 }
-.background {
+.container {
    margin: 0px;
    padding: 0px;
-   background-color:#222831;
-   height: 4000px;
+   background-color:#303236;
+   width: 100%;
    display: flex;
    flex-direction: column;
    align-items: center;
+
 }
 header {
     position: fixed;
     width: 100%;
-    height: 60px;
-    background-color:rgb(48, 71, 94,0.8);
-    border-bottom-left-radius: 8px;
-    border-bottom-right-radius: 8px;
+    height: 50px;
+    background-color:#222831;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -46,37 +49,992 @@ header {
     width: 400px;
     margin-right: 60px;
 }
+.humbergerImg {
+    display: none;
+}
 .heroHeader {
-    background-image: url("../img/photo.jpg");
-    border-radius: 20px;
+    background-image: url("../img/photo.svg");
     background-repeat: no-repeat;
     background-size:cover;
-    border: 4px solid #30475E;
+    box-shadow: 20px 20px 30px #000000;
     width: 1100px;
-    height: 500px;
+    height: 460px;
     display: flex;
     flex-direction: column;
-    justify-content:flex-end;
     align-items:flex-end;
     justify-content: space-around;
     margin-top: 160px;
 }
-.Fullname {
-    color: #222831;
-    font-family: Ravie;
-    margin-right: 100px;
-}
-.more {
+.Hello {
     color: #DDDDDD;
-    background-color: #30475E;
-    border: 4px solid #222831;
+    font-family: cooper;
+    font-size: 80px;
+    margin-right: 180px;
+}
+.Fullname {
+    color: #DDDDDD;
+    font-family: cooper;
+    font-size: 50px;
+    margin-right: 40px;
+}
+.resume {
+    color: #DDDDDD;
+    background-color: #222831;
+    border: 1px solid #707070;
     border-radius: 8px;
-    width: 130px;
-    height: 40px;
+    width: 80px;
+    height: 35px;
     font-family: Rockwell;
-    font-weight: bold;
-    margin-right: 100px;
+    font-size: 13px;
+    margin-right: 40px;
+}
+.button:hover {
+    border: 2px solid #f05454;
+}
+.bigTitles {
+    color: #DDDDDD;
+    padding-top: 20px;
+    font-family: Stencil;
+    font-size: 30px;
+}
+.projects {
+    display: flex;
+    background-color: #232121;
+    align-items: center;
+    overflow:auto;
+    width: 100%;
+    height: 450px;
+    
+    
+}
+.projects::-webkit-scrollbar {
+    display:none;
+  }
+
+.cards {
+    background-color:#222831;
+    box-shadow: 20px 20px 30px #000000;
+    width: 340px;
+    height: 370px;
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.cards:hover {
+    width: 370px;
+    height: 380px;
+    border:1px solid #707070;
+}
+.imgProject {
+    width: 180px;
+    height: 200px;
+    border:1px solid #707070;
+}
+.workTitle {
+    font-family: Arial Rounded MT;
+    font-size: 13px;
+    color: #DDDDDD;
+}
+.description {
+    font-size: 12px;
+    width: 180px;
+    color: #DDDDDD;
+}
+.discover {
+    color: #DDDDDD;
+    background-color: #222831;
+    border: 1px solid #707070;
+    border-radius: 8px;
+    width: 100px;
+    height: 28px;
+    font-family: Rockwell;
+    font-size: 12px;
+}
+.aboutMe {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+.titleTexte {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: space-around;
+    
+}
+.image {
+    background-image: url("../img/image.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 20px 20px 30px #000000;
+    width: 500px;
+    height: 500px;
+    margin-top: 40px;
+}
+.Pabout {
+    color: #DDDDDD;
+    width: 600px;
+    height: auto;
+    font-size: 28px;
+    font-family: Akhbar MT;
+}
+.skills {
+    text-align:right;
+    width: 58%;
+    
+}
+.Pskills {
+    background-color: #222831;
+    border:1px solid #707070;
+    box-shadow: 20px 20px 30px #000000;
+    color: #DDDDDD;
+    padding: 50px;
+    width: 86%;
+    height: auto;
+    font-size: 28px;
+    font-family: Akhbar MT;
+    
+}
+.contactMe {
+    background-color: #222831;
+    border:1px solid #707070;
+    box-shadow: 20px 20px 30px #000000;
+    border-radius: 4px;
+    width: 94%;
+    height: 500px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.inputs {
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    justify-content: space-around;
+}
+#email {
+    width:300px;
+    height: 30px;
+    border-radius: 8px;
+}
+#message {
+    width:600px;
+    height: 200px;
+    border-radius: 8px;
+}
+.send {
+    color: #DDDDDD;
+    background-color: #222831;
+    border: 1px solid #707070;
+    border-radius: 8px;
+    width:100px;
+    height: 35px;
+    font-family: Rockwell;
+    font-size: 16px;
+    align-self: flex-end;
+}
+label {
+    color: #DDDDDD;
+    font-size: 18px;
 }
 
+.linksTeleFix {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 300px;
+    width: 400px;
+    justify-content: space-around;
+    
+}
+.TeleFix {
+    display: flex;
+    align-items: center;
+}
+.teleImg {
+    width: 40px;
+    height: 40px;
+}
+#numberPhone {
+    font-size: 22px;
+}
+.contactLinks {
+    color: #DDDDDD;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: normal;
+    font-family: Fredoka One;
+}
+.contactLinks:hover {
+    color: #f05454;
+}
+.sociallinks {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #222831;
+    margin-top: 100px;
+    height:190px;
+    width: 100%;
+}
+.upperPart {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    
+}
+.media {
+    display: flex;
+    width: auto;
+    height: 60px;
+    margin-left: 40px;
+    align-items: center;
+    
+}
+.socialMedia {
+    width: 26px;
+    height: 26px;
+    margin: 3px;
+}
+.copyright {
+    color: #DDDDDD;
+    width: 16px;
+    height: 16px;
+    
+}
+.rightsDiv {
+    display: flex;
+    align-items: center;
+    width: 160px;
+    height: 100px;
+}
 
+span {
+    font-size: 14px;
+    color: #DDDDDD;
+}
+.lowerPart {
+    display: flex;
+    justify-content: center;
+    justify-content:space-around ;
+    align-items:flex-end;
+    width: 40%;
+    height: 79px;
+    padding-bottom: 10px;
+}
+.lownavlinks {
+    color:#DDDDDD;
+    text-decoration: none;
+    font-family: Fredoka One;
+    font-size: 14px;
+}
+.lownavlinks:hover {
+    text-decoration: underline;
+}
 
+/*media queries*/
+
+@media screen and (max-width:768px) {
+    body {
+        margin: 0px;
+       padding: 0px;
+       width: auto;
+       height: auto;
+    }
+    .container {
+       margin: 0px;
+       padding: 0px;
+       background-color:#303236;
+       width: 100%;
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+    
+    }
+    header {
+        position: fixed;
+        width: 100%;
+        height: 50px;
+        background-color:#222831;
+        border-bottom-left-radius: 6px;
+        border-bottom-right-radius: 6px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        justify-content: space-between;
+    
+    }
+    .logo {
+        margin-left:60px;
+        font-family: Showcard Gothic;
+        color:#DDDDDD;
+        font-weight:lighter;
+    }
+    .navlinks {
+        color:#DDDDDD;
+        text-decoration: none;
+        font-family: Fredoka One;
+        font-size: 12px;
+    }
+    .navlinks:hover {
+        text-decoration: underline;
+    }
+    
+    .navigation {
+        display: flex;
+        justify-content: space-around;
+        width: 400px;
+        margin-right: 60px;
+        display: none;
+    }
+    .humbergerImg {
+        width: 30px;
+        height: 20px;
+        margin-right: 20px;
+        display: inline;
+    }
+    .heroHeader {
+        background-image: url("../img/photo.svg");
+        background-repeat: no-repeat;
+        background-size:cover;
+        box-shadow: 20px 20px 30px #000000;
+        width: 90%;
+        height: 460px;
+        display: flex;
+        flex-direction: column;
+        align-items:flex-end;
+        justify-content: space-around;
+        margin-top: 160px;
+    }
+    .Hello {
+        color: #DDDDDD;
+        font-family: cooper;
+        font-size: 80px;
+        margin-right: 180px;
+    }
+    .Fullname {
+        color: #DDDDDD;
+        font-family: cooper;
+        font-size: 50px;
+        margin-right: 40px;
+    }
+    .resume {
+        color: #DDDDDD;
+        background-color: #222831;
+        border: 1px solid #707070;
+        border-radius: 8px;
+        width: 80px;
+        height: 35px;
+        font-family: Rockwell;
+        font-size: 13px;
+        margin-right: 40px;
+    }
+    .button:hover {
+        border: 2px solid #f05454;
+    }
+    .bigTitles {
+        color: #DDDDDD;
+        padding-top: 20px;
+        font-family: Stencil;
+        font-size: 30px;
+    }
+    .projects {
+        display: flex;
+        background-color: #232121;
+        align-items: center;
+        overflow:auto;
+        width: 100%;
+        height: 450px;
+        
+        
+    }
+    .projects::-webkit-scrollbar {
+        display:none;
+      }
+    
+    .cards {
+        background-color:#222831;
+        box-shadow: 20px 20px 30px #000000;
+        width: 340px;
+        height: 370px;
+        margin: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .cards:hover {
+        width: 370px;
+        height: 380px;
+        border:1px solid #707070;
+    }
+    .imgProject {
+        width: 180px;
+        height: 200px;
+        border:1px solid #707070;
+    }
+    .workTitle {
+        font-family: Arial Rounded MT;
+        font-size: 14px;
+        color: #DDDDDD;
+    }
+    .description {
+        font-size: 12px;
+        width: 180px;
+        color: #DDDDDD;
+    }
+    .discover {
+        color: #DDDDDD;
+        background-color: #222831;
+        border: 1px solid #707070;
+        border-radius: 8px;
+        width: 100px;
+        height: 28px;
+        font-family: Rockwell;
+        font-size: 11px;
+    }
+    .aboutMe {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+    }
+    .titleTexte {
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+        justify-content: space-around;
+        
+    }
+    .image {
+        background-image: url("../img/image.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        box-shadow: 20px 20px 30px #000000;
+        width: 300px;
+        height: 400px;
+        margin-top: 30px;
+    }
+    .Pabout {
+        color: #DDDDDD;
+        width: 300px;
+        height: auto;
+        font-size: 18px;
+        font-family: Akhbar MT;
+    }
+    .skills {
+        text-align:right;
+        width: 58%;
+        
+    }
+    .Pskills {
+        background-color: #222831;
+        border:1px solid #707070;
+        box-shadow: 20px 20px 30px #000000;
+        color: #DDDDDD;
+        padding: 50px;
+        width: 72%;
+        height: auto;
+        font-size: 18px;
+        font-family: Akhbar MT;
+        
+    }
+    .contactMe {
+        background-color: #222831;
+        border:1px solid #707070;
+        box-shadow: 20px 20px 30px #000000;
+        border-radius: 4px;
+        width: 86%;
+        height: 360px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .inputs {
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        height: 360px;
+        justify-content: space-around;
+    }
+    #email {
+        width:200px;
+        height: 30px;
+        border-radius: 8px;
+    }
+    #message {
+        width:300px;
+        height: 100px;
+        border-radius: 8px;
+    }
+    .send {
+        color: #DDDDDD;
+        background-color: #222831;
+        border: 1px solid #707070;
+        border-radius: 8px;
+        height: 30px;
+        width: 60px;
+        font-family: Rockwell;
+        font-size: 12px;
+        align-self: flex-end;
+    }
+    label {
+        color: #DDDDDD;
+        font-size: 16px;
+    }
+    
+    .linksTeleFix {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 300px;
+        width:auto;
+        justify-content: space-around;
+        
+    }
+    .TeleFix {
+        display: flex;
+        align-items: center;
+    }
+    .teleImg {
+        width: 20px;
+        height: 20px;
+    }
+    #numberPhone {
+        font-size: 16px;
+    }
+    .contactLinks {
+        color: #DDDDDD;
+        text-decoration: none;
+        font-size: 12px;
+        font-weight: normal;
+        font-family: Fredoka One;
+    }
+    .contactLinks:hover {
+        color: #f05454;
+    }
+    .sociallinks {
+        display: flex;
+        justify-content: space-between;
+        width: 260px;
+    }
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #222831;
+        margin-top: 100px;
+        height:190px;
+        width: 100%;
+    }
+    .upperPart {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        
+    }
+    .media {
+        display: flex;
+        width: auto;
+        height: 60px;
+        margin-left: 40px;
+        align-items: center;
+        
+    }
+    .socialMedia {
+        width: 26px;
+        height: 26px;
+        margin: 3px;
+    }
+    .copyright {
+        color: #DDDDDD;
+        width: 16px;
+        height: 16px;
+        
+    }
+    .rightsDiv {
+        display: flex;
+        align-items: center;
+        width: 160px;
+        height: 100px;
+    }
+    
+    span {
+        font-size: 14px;
+        color: #DDDDDD;
+    }
+    .lowerPart {
+        display: flex;
+        justify-content: center;
+        justify-content:space-around ;
+        align-items:flex-end;
+        width: 40%;
+        height: 79px;
+        padding-bottom: 10px;
+    }
+    .lownavlinks {
+        
+        color:#DDDDDD;
+        text-decoration: none;
+        font-family: Fredoka One;
+        font-size: 12px;
+        font-weight: 100;
+    }
+    .lownavlinks:hover {
+        text-decoration: underline;
+    }
+}
+
+@media screen and (max-width:320px) {
+    body {
+        margin: 0px;
+       padding: 0px;
+       width: auto;
+       height: auto;
+    }
+    .container {
+       margin: 0px;
+       padding: 0px;
+       background-color:#303236;
+       width: 100%;
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+    
+    }
+    header {
+        position: fixed;
+        width: 100%;
+        height: 50px;
+        background-color:#222831;
+        border-bottom-left-radius: 6px;
+        border-bottom-right-radius: 6px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        justify-content: space-around;
+    
+    }
+    .logo {
+        margin-left:8%;
+        font-family:Showcard Gothic;
+        color:#DDDDDD;
+        font-weight:lighter;
+    }
+    .navlinks {
+        color:#DDDDDD;
+        text-decoration: none;
+        font-family: Fredoka One;
+        font-size: 6px;
+    }
+    .navlinks:hover {
+        text-decoration: underline;
+    }
+    
+    .navigation {
+        display: flex;
+        justify-content: space-around;
+        width: 140px;
+        margin-right: 3px;
+        display: none;
+    }
+    .humbergerImg {
+        width: 26px;
+        height: 16px;
+        margin-left: 140px;
+        display: inline;
+    }
+    .heroHeader {
+        background-image: url("../img/photo.svg");
+        background-repeat: no-repeat;
+        background-size:cover;
+        box-shadow: 20px 20px 30px #000000;
+        width: 90%;
+        height: 460px;
+        display: flex;
+        flex-direction: column;
+        align-items:flex-end;
+        justify-content: space-around;
+        margin-top: 160px;
+    }
+    .Hello {
+        color: #DDDDDD;
+        font-family: cooper;
+        font-size: 40px;
+        margin-right: 150px;
+    }
+    .Fullname {
+        color: #DDDDDD;
+        font-family: cooper;
+        font-size: 30px;
+        margin-right: 40px;
+    }
+    .resume {
+        color: #DDDDDD;
+        background-color: #222831;
+        border: 1px solid #707070;
+        border-radius: 8px;
+        width: 80px;
+        height: 35px;
+        font-family: Rockwell;
+        font-size: 13px;
+        margin-right: 40px;
+    }
+    .button:hover {
+        border: 2px solid #f05454;
+    }
+    .bigTitles {
+        color: #DDDDDD;
+        padding-top: 20px;
+        font-family: Stencil;
+        font-size: 30px;
+    }
+    .projects {
+        display: flex;
+        background-color: #232121;
+        align-items: center;
+        overflow:auto;
+        width: 100%;
+        height: 450px;
+        
+        
+    }
+    .projects::-webkit-scrollbar {
+        display:none;
+      }
+    
+    .cards {
+        background-color:#222831;
+        box-shadow: 20px 20px 30px #000000;
+        width: 340px;
+        height: 370px;
+        margin: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .cards:hover {
+        width: 370px;
+        height: 380px;
+        border:1px solid #707070;
+    }
+    .imgProject {
+        width: 180px;
+        height: 200px;
+        border:1px solid #707070;
+    }
+    .workTitle {
+        font-family: Arial Rounded MT;
+        font-size: 14px;
+        color: #DDDDDD;
+    }
+    .description {
+        font-size: 12px;
+        width: 180px;
+        color: #DDDDDD;
+    }
+    .discover {
+        color: #DDDDDD;
+        background-color: #222831;
+        border: 1px solid #707070;
+        border-radius: 8px;
+        width: 100px;
+        height: 28px;
+        font-family: Rockwell;
+        font-size: 11px;
+    }
+    .aboutMe {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+    }
+    .titleTexte {
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+        justify-content: space-around;
+        
+    }
+    .image {
+        background-image: url("../img/image.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        box-shadow: 20px 20px 30px #000000;
+        width: 0px;
+        height: 0px;
+        margin-top: 30px;
+    }
+    .Pabout {
+        background-color: #222831;
+        color: #DDDDDD;
+        width: 100%;
+        height: 174px;
+        font-size: 16px;
+        font-family: Akhbar MT;
+        text-align: center;
+    }
+    .skills {
+        text-align: center;
+        
+    }
+    .Pskills {
+        background-color: #222831;
+        border:1px solid #707070;
+        box-shadow: 20px 20px 30px #000000;
+        color: #DDDDDD;
+        padding: 20px;
+        width: 74%;
+        height: auto;
+        font-size: 16px;
+        font-family: Akhbar MT;
+        
+    }
+    .contactMe {
+        background-color: #222831;
+        border:1px solid #707070;
+        box-shadow: 20px 20px 30px #000000;
+        border-radius: 4px;
+        width: 86%;
+        height: 460px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .inputs {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        justify-content: space-around;
+    }
+    #email {
+        width:140px;
+        height: 18px;
+        border-radius: 8px;
+    }
+    #message {
+        width:80%;
+        height: 160px;
+        border-radius: 8px;
+    }
+    .send {
+        color: #DDDDDD;
+        background-color: #222831;
+        border: 1px solid #707070;
+        border-radius: 8px;
+        height: 30px;
+        width: 60px;
+        font-family: Rockwell;
+        font-size: 12px;
+        align-self: flex-end;
+    }
+    label {
+        color: #DDDDDD;
+        font-size: 14px;
+    }
+    
+    .linksTeleFix {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 160px;
+        width:100%;
+        justify-content: space-around;
+        
+    }
+    .TeleFix {
+        display: flex;
+        align-items: center;
+    }
+    .teleImg {
+        width: 24px;
+        height: 24px;
+    }
+    #numberPhone {
+        font-size: 16px;
+    }
+    .contactLinks {
+        color: #DDDDDD;
+        text-decoration: none;
+        font-size: 12px;
+        font-weight: lighter;
+        font-family: Fredoka One;
+    }
+    .contactLinks:hover {
+        color: #f05454;
+    }
+    .sociallinks {
+        display: flex;
+        justify-content: space-around;
+        width: 8O%;
+    }
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #222831;
+        margin-top: 100px;
+        height:190px;
+        width: 100%;
+    }
+    .upperPart {
+        
+    }
+    .media {
+        display: flex;
+        height: 60px;
+        margin-left: 6px;
+        
+    }
+    .socialMedia {
+        width: 16px;
+        height: 16px;
+    }
+    .copyright {
+        color: #DDDDDD;
+        width: 12px;
+        height: 12px;
+        
+    }
+    .rightsDiv {
+        display: flex;
+        align-items: center;
+        width: 96px;
+        height: 100px;
+    }
+    
+    span {
+        font-size: 10px;
+        color: #DDDDDD;
+    }
+    .lowerPart {
+        display: flex;
+        justify-content: center;
+        justify-content:space-around ;
+        align-items:flex-end;
+        width: 80%;
+        height: 79px;
+        padding-bottom: 10px;
+    }
+    .lownavlinks {
+        
+        color:#DDDDDD;
+        text-decoration: none;
+        font-family: Fredoka One;
+        font-size: 12px;
+        font-weight: 100;
+    }
+    .lownavlinks:hover {
+        text-decoration: underline;
+    }
+}
+   
